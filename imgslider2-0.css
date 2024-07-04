@@ -8,8 +8,8 @@
 body {
   background: url(https://c4.wallpaperflare.com/wallpaper/655/750/507/naruto-shippuden-scenic-konoha-villages-1920x1200-anime-naruto-hd-art-wallpaper-preview.jpg);
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 .container-1 {
