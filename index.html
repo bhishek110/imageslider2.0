@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider 2.0</title>
+    <link rel="stylesheet" href="imgslider2-0.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container-1">
+        <div class="header-1">
+          <h1>NARUTO VERSE</h1>
+        </div>
+        <div class="header-2">
+          <h3>Shippuden</h3>
+          <p>
+            A huge demon known as the Kyuubi, the Nine-Tailed Fox, attacked
+            Konohagakure, the Hidden Leaf Village, and wreaked havoc. In order
+            to put an end to the Kyuubi's rampage, the leader of the village,
+            the Fourth Hokage, sacrificed his life and sealed the monstrous
+            beast inside the newborn Naruto.
+          </p>
+        </div>
+      </div>
+      <div class="container-2">
+        <div class="header-3">
+          <img src="kurama.jpg" alt="kurama" />
+        </div>
+        <div class="header-4">
+          <img src="naruto.png" alt="naruto" />
+        </div>
+      </div>
+      <div class="container-3">
+        <div class="header-5" style="--quantity: 10">
+          <div class="item" style="--position: 1"><p>NARUTO</p></div>
+          <div class="item" style="--position: 2"><p>SASUKE</p></div>
+          <div class="item" style="--position: 3"><p>SAKURA</p></div>
+          <div class="item" style="--position: 4"><p>SHIKAMARU</p></div>
+          <div class="item" style="--position: 5"><p>NEJI</p></div>
+          <div class="item" style="--position: 6"><p>HINATA</p></div>
+          <div class="item" style="--position: 7"><p>ROCKLEE</p></div>
+          <div class="item" style="--position: 8"><p>SAI</p></div>
+          <div class="item" style="--position: 9"><p>CHOJI</p></div>
+          <div class="item" style="--position: 10"><p>INO</p></div>
+        </div>
+      </div>
+      <div class="container-4">
+        <div class="header-6" style="--quantity: 10">
+          <div class="pic" style="--position :1"><img src="https://i.ytimg.com/vi/zxugNPYOeog/maxresdefault.jpg" alt=""></div>
+          <div class="pic" style="--position :2"><img src="https://wallpapercave.com/wp/wp1861060.png" alt=""></div>
+          <div class="pic" style="--position :3"><img src="https://ranktopten.com/upload/ol/44/shikamaru-nara-quotes_400x400.jpg" alt=""></div>
+          <div class="pic" style="--position :4"><img src="https://imgix.ranker.com/user_node_img/50081/1001613354/original/not-as-a-frightening-weapon-photo-u1?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=650" alt=""></div>
+          <div class="pic" style="--position :5"><img src="https://wallpapercave.com/wp/wp8791446.jpg" alt=""></div>
+          <div class="pic" style="--position :6"><img src="https://th.bing.com/th/id/OIP.3vhpk8WRBRTEDYpoJlf3xwHaFj?rs=1&pid=ImgDetMain" alt=""></div>
+          <div class="pic" style="--position :7"><img src="https://th.bing.com/th/id/OIP.Ec7Y8PHHVM6n8mtnepa0hgHaEJ?rs=1&pid=ImgDetMain" alt=""></div>
+          <div class="pic" style="--position :8"><img src="https://th.bing.com/th/id/OIP.za9IsigRHtvcHtHzuubn-QHaEK?rs=1&pid=ImgDetMain" alt=""></div>
+          <div class="pic" style="--position :9"><img src="https://th.bing.com/th/id/OIP.-5W_G6vuiIxwqNT_OmjOjQHaEK?w=675&h=380&rs=1&pid=ImgDetMain" alt=""></div>
+          <div class="pic" style="--position :10"><img src="https://imgix.ranker.com/user_node_img/50014/1000276252/original/senju-hashirama-fictional-characters-photo-u1" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <audio id="myAudio" src="background.mp3" loop></audio>
+  </body>
+  <script>
+    document.body.addEventListener('click', function() {
+      let audio = document.getElementById('myAudio');
+      audio.play();
+    });
+  </script>
+</html>
