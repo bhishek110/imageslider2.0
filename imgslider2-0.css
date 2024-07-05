@@ -1,15 +1,15 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   background: url(https://c4.wallpaperflare.com/wallpaper/655/750/507/naruto-shippuden-scenic-konoha-villages-1920x1200-anime-naruto-hd-art-wallpaper-preview.jpg);
   background-size: cover;
-  width: 100%;
-  height: 100%;
+  background-repeat: repeat-y;
 }
 
 .container-1 {
@@ -19,7 +19,7 @@ body {
 }
 
 .header-1 {
-  padding: 15px 0px 0px 15px;
+  padding: 15px 0 0 15px;
   display: flex;
   max-width: 99%;
   width: 100%;
@@ -38,45 +38,27 @@ body {
   color: white;
   justify-content: space-around;
   animation: neon 3s infinite;
+  will-change: text-shadow;
 }
 
 @keyframes neon {
-  0%, 100% {
+  0%,
+  100% {
     text-shadow: -1px -1px 1px var(--shadow-color-light),
-                 -1px 1px 1px var(--shadow-color-light),
-                 1px -1px 1px var(--shadow-color-light),
-                 1px 1px 1px var(--shadow-color-light),
-                 0 0 3px var(--shadow-color-light),
-                 0 0 10px var(--shadow-color-light),
-                 0 0 20px var(--shadow-color-light),
-                 0 0 30px var(--shadow-color),
-                 0 0 40px var(--shadow-color),
-                 0 0 50px var(--shadow-color),
-                 0 0 70px var(--shadow-color),
-                 0 0 100px var(--shadow-color),
-                 0 0 200px var(--shadow-color);
-  }
-  50% {
-    text-shadow: -1px -1px 1px var(--shadow-color-light),
-                 -1px 1px 1px var(--shadow-color-light),
-                 1px -1px 1px var(--shadow-color-light),
-                 1px 1px 1px var(--shadow-color-light),
-                 0 0 5px var(--shadow-color-light),
-                 0 0 15px var(--shadow-color-light),
-                 0 0 25px var(--shadow-color-light),
-                 0 0 40px var(--shadow-color),
-                 0 0 50px var(--shadow-color),
-                 0 0 60px var(--shadow-color),
-                 0 0 80px var(--shadow-color),
-                 0 0 110px var(--shadow-color),
-                 0 0 210px var(--shadow-color);
+      -1px 1px 1px var(--shadow-color-light),
+      1px -1px 1px var(--shadow-color-light),
+      1px 1px 1px var(--shadow-color-light), 
+      0 0 10px var(--shadow-color-light), 
+      0 0 30px var(--shadow-color),
+      0 0 50px var(--shadow-color), 
+      0 0 100px var(--shadow-color);
   }
 }
 
 .header-2 {
   width: 100%;
   max-width: 40%;
-  padding: 15px 15px 0px 0px;
+  padding: 15px 15px 0 0;
 }
 
 .header-2 h3 {
@@ -144,10 +126,11 @@ body {
   position: absolute;
   left: -100px;
   animation: slideRight 30s linear infinite;
-  animation-delay: calc((30s / (var(--quantity))) * ((var(--position)) * -1));
+  animation-delay: calc(30s / var(--quantity) * var(--position) * -1);
+  will-change: transform;
 }
 
-.header-5:hover .item{
+.header-5:hover .item {
   animation-play-state: paused !important;
   cursor: pointer;
 }
@@ -187,33 +170,33 @@ body {
   position: absolute;
   left: -100px;
   animation: slideRight 30s linear infinite reverse;
-  animation-delay: calc((30s / (var(--quantity))) * ((var(--position)) * -1));
+  animation-delay: calc(30s / var(--quantity) * var(--position) * -1);
+  will-change: transform;
 }
 
-.header-6 img{
+.header-6 img {
   border-radius: 10px;
   object-fit: cover;
   width: 120px;
   height: 150px;
-  transition: .15s;
+  transition: 0.15s;
 }
 
-.header-6:hover .pic{
+.header-6:hover .pic {
   animation-play-state: paused !important;
   cursor: pointer;
   filter: grayscale(1);
-  transition: .15s;
+  transition: 0.15s;
 }
 
-
-.header-6 .pic:hover{
+.header-6 .pic:hover {
   filter: grayscale(0);
-  transition: .15s;
+  transition: 0.15s;
 }
 
 @keyframes slideRight {
   0% {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
   100% {
     transform: translateX(1500px);
